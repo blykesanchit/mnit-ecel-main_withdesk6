@@ -1,0 +1,352 @@
+.progress-bar-container {
+    width: 500px;
+    height: 50px;
+    margin: 50px 0px;
+    background: black;
+}
+
+.progress-bar-indicator {
+    height: 100%;
+    background-image: linear-gradient(to right, red, green, blue);
+    border-radius: 25px;
+}
+
+/*  */
+#indicator-1 {
+    width: 80%;
+}
+
+.mainContent {
+    padding-top: 13.5vh;
+    /* border: 2px solid black; */
+    height: 600px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+        'left mid mid right';
+
+}
+
+.mainContent>div>div {
+    /* border: 2px solid white; */
+    border-right: 2px solid white;
+    /* box-shadow: 2px 2px #8888883a; */
+    /* padding: 4vh; */
+    margin: 3vh;
+}
+
+@media screen and (max-width: 800px) {
+    .mainContent {
+        /* background-color: #DAA521; */
+        grid-template-areas:
+            'left left'
+            'mid mid'
+            'right right';
+    }
+}
+
+.left {
+    /* border: none; */
+    background-color: white;
+    position: relative;
+    right: 4vw;
+    top: 5vh;
+    padding-left: 1vw;
+    margin-left: 2vw;
+    /* margin-bottom: 0; */
+    /* height: 300px; */
+    background: white;
+    height: 360px;
+    /* margin: 50px; */
+    padding: 3vh;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    position: relative;
+    width: fit-content;
+}
+
+.left::after {
+
+    border-radius: 0 0 200px 200px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15); */
+    content: '';
+    display: block;
+    height: 358px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.left>button {
+    display: block;
+    background-color: white;
+    margin-bottom: 2vh;
+}
+
+.leftBtn>a {
+    text-decoration: none;
+    /* border: none; */
+    background-color: white;
+    /* padding-bottom: 1vh; */
+}
+
+.left>button:hover,
+.left>button>a:hover {
+    background: url(../static/images/leftBtnColor.jpg);
+    color: white;
+    /* margin-bottom: 0; */
+}
+
+.left>button>a:hover {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 80%;
+}
+
+.left_links:active,
+.left>button>a:active {
+    background: url(/ecel/img/leftBtnColor.jpg);
+    color: white;
+}
+
+.mid {
+    width: 54vw;
+}
+
+.videoPlayer {
+    position: relative;
+    top: 5vh;
+}
+
+#outer {
+    width: 55vw;
+    height: 60vh;
+    /* width: 780px;
+height: 420px; */
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.video {
+    position: relative;
+    left: 0;
+    top: 0;
+    opacity: 1;
+}
+
+.right {
+    /* border: 1px solid black; */
+    margin: 0;
+    padding: 0;
+    /* position: relative; */
+    /* right: 1vw; */
+    width: 18vw;
+    text-align: right;
+}
+
+.rightTitle{
+    text-align: right;
+    position: relative;
+    left: 1.3vw;
+}
+
+.rightText {
+    box-shadow: 0 0 7px #00000044;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding: 1vh;
+    /* padding-left: 0;
+    margin-left: 0;
+    padding-right: 0;
+    margin-right: 0; */
+    text-align: right;
+
+    width: 102%;
+}
+
+.row {
+    margin-top: 3vh;
+    padding-top: 4vh;
+}
+
+/* .descContent>section {
+    margin-bottom: 8vh;
+} */
+
+.circular--square {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+}
+
+.outerCol {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    width: 205px;
+    height: 205px;
+    background: linear-gradient(to right, red, green);
+}
+
+.ins {
+    display: flex;
+    width: 250px;
+    height: 250px;
+}
+
+.end-btn {
+    margin-top: 2vw;
+    background-color: #DAA521;
+    border: none;
+    width: 15vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    color: #FFFFFF;
+    border-radius: 0.5vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid green;
+}
+
+/* .mainContent {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 43vw;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+}
+
+.leftBtn {
+    margin: 2vh;
+    border: 0px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.leftBtn>a {
+    text-decoration: none;
+} */
+
+
+
+#container {
+    width: 200px;
+    height: 20px;
+    margin: 0 auto;
+    position: relative;
+    /* top: 50px; */
+    bottom: 28px;
+    transform: translateY(-50%);
+    border-radius: 35px;
+    border: 3px solid white;
+    overflow: hidden;
+}
+
+.child {
+    width: 100%;
+    height: 100%;
+}
+
+.progress {
+    color: white;
+    text-align: center;
+    line-height: 75px;
+    font-size: 35px;
+    font-family: "Segoe UI";
+    animation-direction: reverse;
+    background: #e5405e;
+    background: linear-gradient(to right, rgb(106, 57, 170) 0%, white 40%);
+}
+
+.shrinker {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+.timelapse {
+    animation-name: timelapse;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(.86, .05, .4, .96);
+}
+
+@keyframes timelapse {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+
+.descContent {
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+    .descContent {
+        padding-top: 150vh;
+    }
+}
+
+.aboutTitle {
+    margin-top: 8vh;
+}
+
+.aboutContent {
+    margin-top: 5vh;
+}
+
+.instructor{
+    margin-top: 10vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+/* 
+.instructor_name {
+    position: relative;
+    bottom: 2vh;
+    left: 2vw;
+}
+
+.aboutCel {
+    margin-bottom: 3vh;
+    padding-bottom: 20vh;
+}
+
+#footer {
+    background: hsla(275, 57%, 73%, 1);
+
+    background: linear-gradient(90deg, hsla(275, 57%, 73%, 1) 0%, hsla(266, 57%, 53%, 1) 100%);
+
+    /* background: -moz-linear-gradient(90deg, hsla(275, 57%, 73%, 1) 0%, hsla(266, 57%, 53%, 1) 100%); */
+
+/* background: -webkit-linear-gradient(90deg, hsla(275, 57%, 73%, 1) 0%, hsla(266, 57%, 53%, 1) 100%); */
+#footer{
+    margin-top: 8vh;
+    background: hsla(275, 57%, 73%, 1);
+
+    background: linear-gradient(90deg, hsla(275, 57%, 73%, 1) 0%, hsla(266, 57%, 53%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(275, 57%, 73%, 1) 0%, hsla(266, 57%, 53%, 1) 100%);
+}

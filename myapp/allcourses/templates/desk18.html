@@ -1,0 +1,196 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+<main>
+    <section class="content">
+        <div class="course_header">
+            <div id="course_name">
+                <div class="align">
+                    <span class="text_head"> DATA STRUCTURES</span>
+                </div>
+            </div>
+            <div id="progress_bar">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100">25%</div>
+                </div>
+            </div>
+        </div>
+        <section class="course_main">
+            <div class="sidebar">
+                <div class="side_opt">
+                    <ul class="nav nav-pills flex-column">
+
+                        <li class="nav-item">
+                            <div class="icon">
+                                <img class="bar_icon" src="{% static 'images/overview.png' %}" alt="">
+                            </div>
+
+                            <div class="bar_text">
+                                <a class="nav-link active" href="#">Overview</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="icon">
+                                <img class="bar_icon" src="{% static 'images/lessons.png' %}" alt="">
+                            </div>
+                            <div class="bar_text">
+                                <a class="nav-link" href="#">Lessons</a>
+                            </div>
+
+                        </li>
+                        <li class="nav-item">
+                            <div class="icon">
+                                <img class="bar_icon file" src="{% static 'images/file.png' %}" alt="">
+                            </div>
+                            <div class="bar_text">
+                                <a class="nav-link">Files</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="icon">
+                                <img class="bar_icon" src="{% static 'images/q_a.png' %}" alt="">
+                            </div>
+                            <div class="bar_text">
+                                <a class="nav-link">Question & Ans </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="panel">
+                <div class="box">
+                    <div><p class="down_text">DOWNLOAD PDF</p></div>
+                    <div class="file_container">
+                        <div class="file_element">
+                            <span class="file_text"> Lecture 1 PDF</span>
+                                <img  class="pdf_img" src="{%static 'images/pdf.png'%}" alt="">
+                           <div class="line"> </div>
+                        </div>
+                        <div class="file_element">
+                            <span class="file_text"> Lecture 2 PDF</span>
+                                <img  class="pdf_img" src="{%static 'images/pdf.png'%}" alt="">
+                           <div class="line"> </div>
+                        </div>
+                        <div class="file_element">
+                            <span class="file_text"> Lecture 3 PDF</span>
+                                <img  class="pdf_img" src="{%static 'images/pdf.png'%}" alt="">
+                           <div class="line"> </div>
+                        </div>
+                        <div class="file_element">
+                            <span class="file_text"> Lecture 4 PDF</span>
+                                <img  class="pdf_img" src="{%static 'images/pdf.png'%}" alt="">
+                           <div class="line"> </div>
+                        </div>
+                        <div class="file_element">
+                            <span class="file_text"> Lecture 5 PDF</span>
+                                <img  class="pdf_img" src="{%static 'images/pdf.png'%}" alt="">
+                           <div class="line"> </div>
+                        </div>
+                        <div class="file_element">
+                            <span class="file_text"> Lecture 6 PDF</span>
+                                <img  class="pdf_img" src="{%static 'images/pdf.png'%}" alt="">
+                           <div class="line"> </div>
+                        </div>
+                        <div class="file_element">
+                            <span class="file_text"> Lecture 7 PDF</span>
+                                <img  class="pdf_img" src="{%static 'images/pdf.png'%}" alt="">
+                           <div class="line"> </div>
+                        </div>
+                        <div class="file_element">
+                            <span class="file_text"> Lecture 8 PDF</span>
+                                <img  class="pdf_img" src="{%static 'images/pdf.png'%}" alt="">
+                           <div class="line"> </div>
+                        </div>
+                        
+    
+                    </div>
+                    
+
+                </div>
+
+            </div>
+        </section>
+
+    </section>
+
+    <section class="bottom">
+        <div class="base">
+            <div class="bar_logo">
+
+                <div class="align_logo">
+                    <img id="basic_logo" src="{% static 'images/ecell-logo.png' %}" alt="logo">
+                </div>
+            </div>
+            <div class="description">
+                <div class="align_text">
+                    <span>
+                        The centre for e-Learning (CeL), established at the ICT Centre, MNIT Jaipur, aims to impart quality education, in the easiest manner, with equitable access to learners across the nation.
+                    </span>    
+                </div>
+                        
+            </div>
+        </div>
+        <div class="bottom_bar">
+            <div class="bottom_container_1">
+                <div class="map">
+                    <img src="{% static 'images/map.png' %}" alt="">
+                </div>
+                <div class="ptcell flex-element">
+                    <p  class="head_btm">
+                        PT CELL
+                    </p>
+                    <a class="link_btm"> Jobs </a>
+                    <a class="link_btm"> Experience </a>
+
+                </div>
+                <div class="others">
+                    <p  class="head_btm">
+                        OTHERS
+                    </p>
+                    <a class="link_btm"> Courses</a>
+                    <a class="link_btm"> Podcasts </a>
+                    <a class="link_btm"> Blogs </a>
+
+                </div>
+                <div class="contact">
+                    <p  class="head_btm">
+                        CONTACT
+                    </p>
+                    <a class="add"> MNIT Prabha Bhawan, Naya Bass, Jhalana Gram, Malviya Nagar, Jaipur, Rajasthan 302017</a>
+                    <a class="add">cel@mnit.ac.in</a>
+                    <a class="add"> 10:00AM - 06:00PM </a>
+                </div>
+
+            </div>
+            <div class="bottom_container_2">
+                <div class="dotted"></div>
+                <div class="copy_flex">
+                    <div class="copyright">
+                        &#169 Copyright | 2022 CeL MNIT Jaipur | All Right Reserved
+                        <br>
+                        Privacy Policy Terms of Service
+                    </div>
+                    <div class="social">
+                        <div class="social_icon">
+                            <a href=""><img src="{%static 'images/lik.png'%}" alt=""></a>
+                        </div>
+                        <div class="social_icon">
+                            <a href=""><img src="{%static 'images/insta.png'%}" alt=""></a>
+                        </div>
+                        <div class="social_icon">
+                            <a href=""><img src="{%static 'images/tube.png'%}" alt=""></a>
+                        </div>
+    
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+</main>
+{% endblock content %}
